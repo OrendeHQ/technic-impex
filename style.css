@@ -1,0 +1,178 @@
+body * {
+  font-weight: 300;
+}
+
+section.container-fluid {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+section.container-fluid h1.text-center {
+  text-transform: uppercase;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.img-fluid.icon {
+  max-width: 200px;
+}
+
+.form-bordered {
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-bordered .btn {
+  align-self: center;
+}
+
+#hero {
+  min-height: 100vh;
+  background: url("https://www.jacekpartyka.com/wp-content/uploads/2014/06/living-room-interior-lightings-furniture-decoration-office-home-design-popular-design-scandinavian-design-com-with-simple-wooden-armless-chair-design-for-scandinavian-design-competition-scandinavian.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#hero .hero-chevron {
+  font-size: 4em;
+  -webkit-text-stroke: 4px white;
+  color: #000;
+  position: absolute;
+  bottom: 20px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+#hero .hero-chevron:hover, #hero .hero-chevron:focus {
+  text-decoration: none;
+}
+
+#services {
+  background-color: #25adff;
+  transition: all 1s;
+}
+
+#services .row {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+#products .container .row.product-listing {
+  display: flex;
+  flex-direction: column;
+}
+
+#products .nav {
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#products .nav .nav-item .nav-link {
+  color: #000;
+}
+
+#products .nav .nav-item .nav-link.active {
+  border-radius: 0;
+  border: 1px solid #000;
+}
+
+#products .nav .nav-item .nav-link:hover {
+  border-radius: 0;
+}
+
+#products .tab-content {
+  width: 100%;
+}
+
+#products .tab-content .row {
+  
+  flex-direction: row;
+}
+
+#products .tab-content .row .col-md-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;  
+}
+
+#products .tab-content .row .col-md-1 .fa {
+  color: #000;
+}
+
+#products .tab-content .row .col-md-10 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#products .tab-content .row .col-md-10 .img-fluid {
+  margin-bottom: 20px;
+}
+
+#products .product-download .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#megaman .row {
+  align-items: center;
+}
+
+#about {
+  background: url("http://www.genkiwear.com/wp-content/uploads/2016/11/warehouse-LED-lighting-case-study-150w-high-bay-led-lights-replace-400w-metal-halide-power-efficiencies1-150-watt-high-bay-led-lights-in-warehouse.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#about h1, #about h5 {
+  background-color: rgba(255,255,255,0.7);
+}
+
+#contact .row .col-md-6 {
+  margin-top: 50px;
+}
+
+#contact .form-bordered {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .md-order-1 {
+    order: 1;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .tab-pane .fa {
+    display: none;
+  }
+  #contact .form-bordered {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
