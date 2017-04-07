@@ -22,11 +22,11 @@ function handleScroll() {
     $('.nav-link[href="#services"]').addClass('active');
     var relativePos = position - $('#services').position().top;
     if (relativePos >= $('#exporter').position().top && relativePos < $('#projects').position().top) {
-      $('#services').css('background-color', '#57d781');
+      $('#services').css('background-color', '#ffccac');
     } else if (relativePos >= $('#projects').position().top) {
-      $('#services').css('background-color', '#fba6c9');
+      $('#services').css('background-color', '#ffeb94');
     } else {
-      $('#services').css('background-color', '#25adff');
+      $('#services').css('background-color', '#c1d1dc');
     }
   } else if (position >= $('#products').position().top && position < $('#about').position().top) {
     $('.nav-link[href="#products"]').addClass('active');
