@@ -18,6 +18,8 @@ footer {
 
 .img-fluid.icon {
   max-width: 200px;
+  height: 100px;
+  margin: 20px auto;
 }
 
 .form-bordered {
@@ -133,7 +135,7 @@ footer {
 #products .product-download .col-md-4 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
 }
