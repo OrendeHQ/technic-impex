@@ -130,6 +130,8 @@ footer {
 
 #products .tab-content .row .col-md-10 .img-fluid {
   margin-bottom: 20px;
+  max-width: 180px;
+  max-height: 180px;
 }
 
 #products .product-download .col-md-4 {
