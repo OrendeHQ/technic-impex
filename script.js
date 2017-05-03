@@ -8,6 +8,8 @@ $(document).ready(function() {
     smoothScroll($(e.currentTarget).attr('href'), 50);
   });
   
+  $(document).on('submit', '.form-bordered', handleFormSubmit);
+  
   $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {    
     var target = $(this).attr('href');
     $('a[data-toggle="tab"]').removeClass('active');
@@ -39,4 +41,25 @@ function handleScroll() {
 
 function smoothScroll(anchor, offset) {
   $('body').animate({scrollTop: $(anchor).offset().top - offset }, 'slow');
+}
+
+function handleFormSubmit(e) {
+  e.preventDefault();
+  var $form = $(e.currentTarget);
+  var name = $form.find('input[name="name"]').val();
+  var email = $form.find('input[name="email"]').val();
+  var message = $form.find('textarea[name="message"]').val();
+  $form.addClass('sending');
+  $.ajax({
+    url: 'https://technicimpex.herokuapp.com',
+    method: 'POST',
+    data: { name: name, email: email, message: message }
+  }).done(function (res) {
+    $form[0].reset();
+    $form.removeClass('sending');
+    alert('Thank you! We\'ve gotten your message!');
+  }).fail(function (res) {
+    alert(res.message);
+    $form.removeClass('sending');
+  });
 }

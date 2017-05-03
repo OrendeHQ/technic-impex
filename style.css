@@ -179,6 +179,17 @@ footer {
   padding-bottom: 100px;
 }
 
+#contact .form-bordered .fa-spinner {
+  display: none;
+}
+
+#contact .form-bordered.sending .fa-send-o {
+  display: none;
+}
+#contact .form-bordered.sending .fa-spinner {
+  display: inline-block;
+}
+
 @media screen and (min-width: 768px) {
   .md-order-1 {
     order: 1;
