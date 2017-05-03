@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+  font-family: 'Raleway', serif;
+}
+
 body * {
   font-weight: 300;
 }
@@ -36,7 +42,7 @@ footer {
 
 #hero {
   min-height: 100vh;
-  background: url("https://www.jacekpartyka.com/wp-content/uploads/2014/06/living-room-interior-lightings-furniture-decoration-office-home-design-popular-design-scandinavian-design-com-with-simple-wooden-armless-chair-design-for-scandinavian-design-competition-scandinavian.jpg") no-repeat center center;
+  background: url("assets/hero_img.JPG") no-repeat center bottom;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -44,9 +50,17 @@ footer {
   align-items: center;
 }
 
+#hero .overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0,0,0,.35);
+}
+
 #hero h1 {
-  text-transform: uppercase;
   text-align: center;
+  color: #fff;
+  z-index: 1;
 }
 
 #hero .hero-chevron {
@@ -140,6 +154,7 @@ footer {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
+  margin-top: 50px;
 }
 
 #megaman .row {
