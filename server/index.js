@@ -30,7 +30,7 @@ app.post('/', (req, res) => {
     from: process.env.EMAIL,
     to: 'sales@technicimpex.com.sg',
     bcc: ['hung.ngn.the@gmail.com', 'tzechong1994@gmail.com'],
-    subject: 'Message from Technix Impex Website',
+    subject: 'Message from Technic Impex Website',
     text: `
       Name: ${name}
       Email: ${email}
@@ -45,9 +45,9 @@ app.post('/', (req, res) => {
 
 app.use('*', (req, res) => {
   res.status(404).send('Page not found!');
-})
+});
 
 app.listen(process.env.PORT, (err) => {
   if (err) throw err;
   console.log('UP AND RUNNING @ ', process.env.PORT);
-})
+});
