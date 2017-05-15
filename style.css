@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@font-face {
+  font-family: CatNorth;
+  src: url('assets/CAT North.ttf');
+}
 
 * {
   font-family: 'Raleway', serif;
@@ -20,6 +24,17 @@ section.container-fluid h1.text-center {
 footer {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand span {
+  font-family: 'CatNorth', serif;
+  font-size: 1.5rem;
+  color: #2f6f9f;
+  margin-left: 5px;
 }
 
 .img-fluid.icon {
