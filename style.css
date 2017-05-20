@@ -35,6 +35,7 @@ footer {
   font-size: 1.5rem;
   color: #2f6f9f;
   margin-left: 5px;
+  text-transform: uppercase;
 }
 
 .img-fluid.icon {
