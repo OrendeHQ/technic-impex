@@ -45,7 +45,7 @@ footer {
 }
 
 .form-bordered {
-  border: 1px solid rgba(0,0,0,.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 30px;
   display: flex;
@@ -58,7 +58,7 @@ footer {
 
 #hero {
   min-height: 100vh;
-  background: url("assets/hero_img.JPG") no-repeat center bottom;
+  background: url('assets/hero_img.JPG') no-repeat center bottom;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -72,7 +72,7 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,.35);
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 #hero h1 {
@@ -92,7 +92,8 @@ footer {
   justify-content: center;
 }
 
-#hero .hero-chevron:hover, #hero .hero-chevron:focus {
+#hero .hero-chevron:hover,
+#hero .hero-chevron:focus {
   text-decoration: none;
 }
 
@@ -139,7 +140,6 @@ footer {
 }
 
 #products .tab-content .row {
-  
   flex-direction: row;
 }
 
@@ -147,7 +147,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;  
+  font-size: 30px;
 }
 
 #products .tab-content .row .col-md-1 .fa {
@@ -180,12 +180,13 @@ footer {
 }
 
 #about {
-  background: url("http://www.genkiwear.com/wp-content/uploads/2016/11/warehouse-LED-lighting-case-study-150w-high-bay-led-lights-replace-400w-metal-halide-power-efficiencies1-150-watt-high-bay-led-lights-in-warehouse.jpg") no-repeat center center;
+  background: url('/assets/warehouse.jpg') no-repeat center center;
   background-size: cover;
 }
 
-#about h1, #about h5 {
-  background-color: rgba(255,255,255,0.7);
+#about h1,
+#about h5 {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 #contact .row .col-md-6 {
@@ -212,7 +213,6 @@ footer {
   .md-order-1 {
     order: 1;
   }
-  
 }
 
 @media screen and (max-width: 768px) {
